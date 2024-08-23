@@ -16,7 +16,7 @@
 - `index.html`: Contém a estrutura HTML do site.
 - `assets/javascript/index.js`: Contém os scripts de JavaScript que implementam a lógica dos cálculos de saúde e fitness.
 - `assets/css/styles.css`: Contém o estilo visual da aplicação.
-- `assets/images/`: Contém as imagens usadas no site.
+- `assets/image/`: Contém as imagens usadas no site.
 
 ## Testes Automatizados
 
@@ -29,7 +29,7 @@ Os testes para as funções Javascript foram desenvolvidos usando Jest. Eles est
 
 ## Página
 
-[![](image/healthfitnesscalc.png)](https://lpaivaf.github.io/Health-and-Fitness-Calc/)
+[![](assets/image/dispositivoshfcalc-removebg.png)](https://lpaivaf.github.io/Health-and-Fitness-Calc/)
 
 ## Como Executar o Projeto
 
