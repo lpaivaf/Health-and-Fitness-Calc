@@ -1,6 +1,4 @@
-### README.md
-
-# Health & Fitness Calc
+## Health & Fitness Calc
 
 ## Descrição
 
