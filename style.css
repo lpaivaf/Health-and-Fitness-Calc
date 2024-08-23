@@ -87,12 +87,6 @@ aside {
     width: 190px;
 }
 
-
-/* label .img_marcador{
-width: 35px;
-margin: .5rem 0 0 9rem;
-} */
-
 .menu-label,
 .home-label {
     margin: .3rem 0;
@@ -188,17 +182,12 @@ margin: .5rem 0 0 9rem;
 
 .capa {
     width: 100%;
-    /* backdrop-filter: blur(30px); */
     color: rgb(4, 24, 16);
     margin: 0 auto;
-    /* padding: 1rem; */
-    /* border-radius: 8px; */
-    /* display: none; */
 }
 
 .capa h2 {
     font-size: 1.8rem;
-    /* padding-bottom: 2rem; */
     line-height: 2rem;
     padding: 1rem 0 2rem .5rem;
 }
