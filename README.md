@@ -14,8 +14,8 @@
 ## Estrutura do Projeto
 
 - `index.html`: Contém a estrutura HTML do site.
-- `assets/JavaScript/index.js`: Contém os scripts de JavaScript que implementam a lógica dos cálculos de saúde e fitness.
-- `assets/CSS/styles.css`: Contém o estilo visual da aplicação.
+- `assets/javascript/index.js`: Contém os scripts de JavaScript que implementam a lógica dos cálculos de saúde e fitness.
+- `assets/css/styles.css`: Contém o estilo visual da aplicação.
 - `assets/images/`: Contém as imagens usadas no site.
 
 ## Testes Automatizados
