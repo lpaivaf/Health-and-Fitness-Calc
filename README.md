@@ -15,12 +15,12 @@
 
 - `index.html`: Contém a estrutura HTML do site.
 - `assets/JavaScript/index.js`: Contém os scripts de JavaScript que implementam a lógica dos cálculos de saúde e fitness.
-- `assets/CSS/styles.css`: (Se aplicável) Contém o estilo visual da aplicação.
-- `assets/images/`: (Se aplicável) Contém as imagens usadas no site.
+- `assets/CSS/styles.css`: Contém o estilo visual da aplicação.
+- `assets/images/`: Contém as imagens usadas no site.
 
 ## Testes Automatizados
 
-Os testes para as funções JavaScript foram desenvolvidos usando Jest. Eles estão localizados em `__tests__/` e cobrem os cenários principais, como entradas inválidas, entradas extremas e cálculos corretos.
+Os testes para as funções Javascript foram desenvolvidos usando Jest. Eles estão localizados em `__tests__/` e cobrem os cenários principais, como entradas inválidas, entradas extremas e cálculos corretos.
 
 ## Requisitos
 
