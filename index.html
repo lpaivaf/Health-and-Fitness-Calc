@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health and Performance Calculator</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body class="body_container">
+    <header>
+        <h1>Health & Fitness Calc</h1>
+        <label class="home-label" for="home">Home</label>
+
+    </header>
+    <div class="input-div">
+        <!-- Inputs Marcadores de Saúde -->
+        <input class="input" type="radio" id="home" name="saude" checked>
+        <input class="input" type="radio" id="imc" name="saude">
+        <input class="input" type="radio" id="tmb" name="saude">
+        <input class="input" type="radio" id="bf" name="saude">
+        <!-- <input class="input" type="radio" id="pesoIdeal" name="saude"> -->
+        <!-- <input class="input" type="radio" id="calorias" name="saude"> -->
+
+        <!-- Inputs Fitness -->
+        <input class="input" type="radio" id="rm" name="saude">
+        <!-- Adicionar 'name' iguais permite acionar um input por vez -->
+    </div>
+
+    <aside>
+        <!-- <div class="img_marcador"><img src="/MarkHealth-Refatoracao/assets/image/marcador1.png" alt=""></div> -->
+        <label class="menu-label" for="imc">IMC</label>
+        <label class="menu-label" for="tmb">TMB</label>
+        <label class="menu-label" for="bf">%Gordura</label>
+        <!-- <label class="menu-label" for="pesoIdeal">Peso Ideal</label> -->
+        <!-- <label class="menu-label" for="calorias">Calorias</label> -->
+        <div class="line"></div>
+        <label class="menu-label" for="rm">RM</label>
+    </aside>
+
+    <main class="main_content">
+        <div class="img_capa " ><img src="/assets/image/imgMoçaNoParque2.png" alt=""></div>
+        <div class="dados">
+            <h2>Inserir Dados</h2>
+        </div>
+        <article class="capa info_capa">
+            <div class="h2_title">
+                <div><h2>5</h2></div>
+                <div><h2>hábitos simples para você cuidar bem da sua <span>Saúde</span>.</h2></div>
+            </div>
+            
+            <article class="introducao">
+                <p>&emsp; Manter a saúde em dia é uma preocupação crescente devido à vida agitada e ao estresse do
+                    trabalho.
+                    Para ter uma maior qualidade de vida, é importante adotar hábitos saudáveis, como ser mais otimista,
+                    parar de fumar, evitar fast foods e praticar esportes. Esses hábitos contribuem para um bem-estar
+                    físico, mental, psicológico e social, reduzindo gastos com medicamentos, aumentando a produtividade
+                    e garantindo mais anos de vida.
+
+                <p>&emsp; A medicina preventiva visa evitar doenças, e os cuidados com a saúde devem ser mantidos em
+                    todas as
+                    fases da vida. Desde a infância, com atenção dos pais, passando pela adolescência, onde a prática de
+                    esportes e a saúde mental são fundamentais, até a fase adulta, onde o trabalho intenso muitas vezes
+                    prejudica a saúde. Na velhice, cuidados redobrados são necessários devido à fragilidade do corpo,
+                    sendo importante manter-se ativo para garantir o bem-estar físico e emocional.</p>
+
+                <p>&emsp; Inserir práticas saudáveis na rotina diária é essencial para melhorar a qualidade de vida em
+                    todas as
+                    fases da vida.</p>
+            </article>
+
+            <article class="habito">
+                <div class="img-atFísica">
+                    <img src="/assets/image/Atividade-Física-removebg.png" alt="">
+                </div>
+                <div class="habito_texto">
+                    <h3>Praticar atividade física.</h3>
+                    <p>&emsp; Praticar atividades físicas é essencial para manter o corpo saudável e melhorar a
+                        disposição, já
+                        que exercícios liberam endorfina e dopamina, hormônios que proporcionam sentimentos de
+                        satisfação e bem-estar. É importante escolher uma atividade que combine com seu gosto pessoal
+                        para evitar desistências. Há uma grande variedade de exercícios disponíveis, como musculação,
+                        caminhada, corrida, ciclismo, Pilates, yoga, danças, judô, boxe, natação e alongamento.</p>
+
+                    <p>&emsp; Os benefícios das atividades físicas incluem fortalecimento de músculos, ossos e tendões,
+                        fortalecimento do sistema imunológico, aumento da resistência, melhora da circulação sanguínea,
+                        redução de riscos de doenças cardiovasculares, prevenção de infarto, controle do diabetes,
+                        diminuição da hipertensão, redução dos sintomas de depressão, estresse e ansiedade, e melhora da
+                        qualidade do sono. Além disso, a prática regular de exercícios pode ajudar na perda de peso e na
+                        definição do corpo, proporcionando uma sensação de dever cumprido e satisfação.</p>
+                </div>
+            </article>
+
+            <article class="habito reverse_content">
+                <div class="img-alongamento">
+                    <img src="/assets/image/Alongamento-removebg.png" alt="">
+                </div>
+                <div class="habito_texto">
+                    <h3>Inclua alongamentos na sua rotina.</h3>
+                    <p>&emsp; Os alongamentos são exercícios que aumentam a flexibilidade muscular, promovendo o
+                        estiramento
+                        das fibras musculares e ampliando a movimentação das articulações. São essenciais tanto antes
+                        quanto depois das atividades físicas, preparando músculos, tendões e outras estruturas do corpo.
+                        Além disso, são recomendados ao longo do dia, especialmente para quem trabalha no computador ou
+                        realiza movimentos repetitivos. Pausas de 10 a 15 minutos para alongar as articulações são
+                        ideais.</p>
+
+                    <p>&emsp; Benefícios dos alongamentos incluem:</p>
+                    <div>
+                        <ul>
+                            <li>Maior consciência corporal</li>
+                            <li>Aumento da circulação sanguínea</li>
+                            <li>Aquecimento e preparação para atividades físicas</li>
+                            <li>Redução das tensões musculares</li>
+                            <li>Aumento da amplitude dos movimentos</li>
+                            <li>Movimentos mais leves</li>
+                            <li>Prevenção de lesões</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="habito">
+                <div class="img-alimentação">
+                    <img src="/assets/image/Piramide-Alimentar-removebg.png" alt="">
+                </div>
+                <div class="habito_texto">
+                    <h3>Alimentação equilibrada faz toda diferença.</h3>
+                    <p>&emsp; A pirâmide alimentar é uma representação gráfica que ajuda a manter uma alimentação
+                        saudável,
+                        equilibrada e nutritiva. Ela divide os alimentos em três grupos principais: energéticos,
+                        reguladores e construtores, cada um com um papel específico no corpo.</p>
+
+                    <p><strong>&emsp; Energéticos: </strong>Na base da pirâmide, esses alimentos fornecem energia para
+                        as
+                        atividades diárias e exercícios físicos. Exemplos incluem alimentos à base de farinha, cereais,
+                        tubérculos e raízes, que são ricos em carboidratos transformados em glicose no corpo.</p>
+
+                    <p><strong>&emsp; Reguladores: </strong>No segundo nível da pirâmide, esses alimentos regulam as
+                        funções do
+                        organismo, trazendo disposição e equilíbrio. São ricos em fibras, sais minerais e vitaminas (A,
+                        B, C, D, E e K).</p>
+
+                    <p><strong>&emsp; Construtores: </strong>Estes alimentos ajudam na recuperação e reconstrução do
+                        corpo,
+                        fortalecendo o sistema imunológico e regenerando tecidos. Incluem proteínas como ovos, frango,
+                        tofu, leite e derivados, além de leguminosas como soja, lentilha e ervilha.</p>
+
+                    <p>&emsp; O Ministério da Saúde recomenda seguir as proporções da pirâmide alimentar para uma dieta
+                        saudável. A pirâmide tem quatro níveis e oito grupos de alimentos, cada um com uma proporção
+                        ideal de consumo. O gráfico é interpretado da base para o topo, com os alimentos na base (grupo
+                        1) sendo consumidos em maiores quantidades e os do topo (grupos 7 e 8) em menores porções.</p>
+
+                    <p><strong>Grupos da pirâmide:</strong></p>
+                    <div>
+                        <ol>
+                            <li>Carboidratos (arroz, batata, cereais, massas)</li>
+                            <li>Hortaliças (verduras e legumes)</li>
+                            <li>Frutas (vitaminas, sais minerais, antioxidantes)</li>
+                            <li>Cálcio (ovos, leite e derivados)</li>
+                            <li>Proteínas animais (carnes bovinas, peixes)</li>
+                            <li>Proteínas vegetais e leguminosas (feijão, lentilha, soja)</li>
+                            <li>Óleos e gorduras (manteiga, óleos vegetais, azeite de oliva)</li>
+                            <li>Açúcares (doces, guloseimas)</li>
+                        </ol>
+                    </div>
+                    <p>&emsp; Seguir essas diretrizes é fundamental para uma alimentação balanceada, garantindo a
+                        ingestão
+                        adequada de todos os nutrientes necessários. </p>
+                </div>
+            </article>
+
+            <article class="habito reverse_content">
+                <div class="img-agua">
+                    <img src="/assets/image/Beba-Agua-removebg.png" alt="">
+                </div>
+                <div class="habito_texto ">
+                    <h3>Beba água regularmente.</h3>
+                    <p>&emsp; Beber bastante água é essencial para impulsionar as funções do corpo, que é composto por
+                        cerca de
+                        70% desse líquido. Manter-se hidratado traz diversos benefícios, como facilitar a digestão,
+                        reduzir o inchaço, ativar a circulação sanguínea, garantir o funcionamento dos rins, prevenir a
+                        prisão de ventre, reduzir cãibras e regular a temperatura corporal.</p>
+
+                    <p>&emsp; A falta de hidratação pode causar problemas renais, falta de memória, redução das
+                        atividades
+                        cerebrais, ressecamento da pele e desidratação.</p>
+                </div>
+            </article>
+
+            <article class="habito">
+                <div class="img-sono">
+                    <img src="/assets/image/sono-removebg.png" alt="">
+                </div>
+                <div class="habito_texto">
+                    <h3>Sono com qualidade.</h3>
+                    <p>&emsp; Ter uma boa qualidade de sono é fundamental para uma vida saudável. Em contrapartida,
+                        dormir mal
+                        pode resultar em cansaço, fadiga, sonolência, ansiedade, depressão, aumento do apetite,
+                        enfraquecimento do sistema imunológico, problemas de memória e maior risco de diabetes e doenças
+                        cardíacas.</p>
+
+                    <p>&emsp; Para combater a insônia, algumas mudanças de hábitos são eficazes:</p>
+                    <div>
+                        <ul>
+                            <li>Não leve o celular para a cama;</li>
+                            <li>Desligue a televisão e outros dispositivos eletrônicos;</li>
+                            <li>Consuma refeições leves e de fácil digestão;</li>
+                            <li>Evite cafeína e chocolate próximo ao horário de dormir.</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </article>
+
+        
+        <section class="section_container  ">
+            <article class="article-container  ">
+                <!-- Indice de Massa Corporal (IMC) -->
+                <article class="article_imc">
+                    <div>
+                        <h3>Índice de Massa Corporal (IMC)</h3>
+                        <label for="peso_IMC">Peso (kg):</label>
+                        <input type="number" id="peso_IMC" name="peso_IMC" min="1" required>
+
+                        <label for="altura_IMC">Altura (cm):</label>
+                        <input type="number" id="altura_IMC" name="altura_IMC" min="0.1" required>
+
+                        <button onclick="calcularIMC()">Calcular</button>
+                        <button onclick="limparCamposIMC()" value="limpar" class="clear">Limpar</button>
+                        <!-- Alteração no btn 'limparCampo'                              <<<< Aqui. -->
+
+
+
+                        <label for="imc_result">IMC:</label>
+                        <input type="text" id="imc_result" name="imc_result" readonly>
+
+                        <label for="diagnostico">Diagnóstico:</label>
+                        <input type="text" id="diagnostico" name="diagnostico" readonly>
+
+                        <!-- <button>Salvar Dados</button>
+                        <button class="cancel">Cancelar</button> -->
+                    </div>
+                </article>
+                <article class="texto txt_imc">
+                    <h3>O que é e como se cálcula o IMC?</h3>
+                    <p>O Cálculo do IMC determina o Índice de Massa Corporal, um indicador de magreza ou obesidade
+                        baseado em altura e peso, para classificar o estado de peso (abaixo do peso, normal, sobrepeso
+                        ou obeso). Esta medida é usada para avaliar a saúde corporal e é influenciada por fatores como
+                        idade e sexo. A calculadora também fornece o Índice Ponderal, além do IMC.</p>
+
+                    <ul class="cat-adulto">
+                        <h4>Categorias de IMC para Adultos</h4>
+                        <li><strong>Magreza severa:</strong> &lt; 16</li>
+                        <li><strong>Magreza moderada:</strong> 16 - 17</li>
+                        <li><strong>Magreza leve:</strong> 17 - 18,5</li>
+                        <li><strong>Normal:</strong> 18,5 - 25</li>
+                        <li><strong> Sobrepeso:</strong> 25 - 30</li>
+                        <li><strong> Obeso Classe I:</strong> 30 - 35</li>
+                        <li><strong> Obeso Classe II:</strong>35 - 40</li>
+                        <li><strong>Obeso Classe III:</strong> &gt; 40 </li>
+                    </ul>
+
+                    <ul class="cat-infantil">
+                        <h4>Categorias de IMC para Crianças e Adolescentes (2 a 20 anos)</h4>
+                        <li><strong>Abaixo do peso:</strong> &lt; 5%</li>
+                        <li><strong>Peso saudável:</strong> 5% - 85%</li>
+                        <li><strong>Risco de sobrepeso:</strong> 85% - 95%</li>
+                        <li><strong>Sobrepeso:</strong> &gt; 95%</li>
+                    </ul>
+
+                    <h3 class="risco">Riscos de Saúde</h3>
+                    <ul class="risco-ul">
+                        <li><strong>Excesso de peso:</strong> Aumenta o risco de doenças como hipertensão, diabetes tipo
+                            II, doenças cardíacas, e certos tipos de câncer.</li>
+                        <li><strong>Baixo peso:</strong>Pode levar a desnutrição, osteoporose, problemas imunológicos e
+                            complicações reprodutivas.</li>
+
+                    </ul>
+
+                    <h3 class="limitaçoes">Limitações do IMC</h3>
+                    <p>O IMC não distingue entre massa muscular e gordura, podendo ser menos preciso para atletas ou
+                        indivíduos com alta massa muscular. Também não considera variações de composição corporal por
+                        idade, sexo e etnia.
+
+                    <h3>Fórmula do IMC</h3>
+                    <ul class="formula-ul">
+                        <li><strong>Sistema Internacional de Unidades (SI):</strong> IMC = massa (kg) / altura² (m)</li>
+                        <li><strong>Sistema dos EUA (USC):</strong> IMC = 703 x massa (lbs) / altura² (pol)</li>
+                    </ul>
+                    <p>O IMC é uma ferramenta útil, mas deve ser complementada com outras avaliações para determinar o
+                        peso corporal saudável de uma pessoa.
+                    </p>
+                </article>
+            </article>
+
+            <!-- Taxa Metabólica Basal (TMB) -->
+            <article class="article-container">
+                <article class="article_tmb">
+                    <h3>Taxa Metabólica Basal (TMB)</h3>
+                    <label for="idade_tmb">Idade:</label>
+                    <input type="number" id="idade_tmb" name="idade_tmb" required>
+
+                    <label for="sexo_tmb">Sexo:</label>
+                    <select id="sexo_tmb" name="sexo_tmb">
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                    </select>
+
+                    <label for="peso_tmb">Peso (kg):</label>
+                    <input type="number" id="peso_tmb" name="peso_tmb" required>
+
+                    <label for="altura_tmb">Altura (cm):</label>
+                    <input type="number" id="altura_tmb" name="altura_tmb" required>
+
+                    <label for="atividade">Nível de Atividade Física:</label>
+                    <select id="atividade" name="atividade">
+                        <option value="sedentario">Sedentário</option>
+                        <option value="levemente_ativo">Levemente Ativo</option>
+                        <option value="moderadamente_ativo">Moderadamente Ativo</option>
+                        <option value="muito_ativo">Muito Ativo</option>
+                    </select>
+
+                    <button onclick="calcularTMB()">Calcular</button>
+                    <button onclick="limparCamposTMB()" value="limpar" class="clear">Limpar</button>
+                    <!-- Alteração no btn 'limparCampo'                              <<<< Aqui. -->
+
+
+
+                    <label for="tmb_result">TMB:</label>
+                    <input type="text" id="tmb_result" name="tmb_result" readonly>
+
+                    <!-- <button>Salvar Dados</button>
+                    <button class="cancel">Cancelar</button> -->
+                </article>
+                <article class="texto txt_tmb">
+                    <h3>Afinal, o que é TMB e pra que serve?</h3>
+                    <p>A <strong>Taxa Metabólica Basal (TMB)</strong> é a quantidade de energia que o corpo usa em
+                        repouso para manter funções vitais, como coração, cérebro e órgãos. Ela representa cerca de 70%
+                        do gasto energético diário de uma pessoa, enquanto a atividade física e a digestão contribuem
+                        com aproximadamente 20% e 10%, respectivamente. </p>
+                    <p><strong>Cálculo da TMB:</strong> Existem várias fórmulas para calcular a TMB, como as de
+                        Mifflin-St Jeor, Harris-Benedict revisada, e Katch-McArdle. A fórmula de Mifflin-St Jeor é
+                        considerada a mais precisa para a maioria das pessoas, enquanto a de Katch-McArdle é melhor para
+                        quem conhece sua massa corporal magra.
+                    </p>
+                    <h4>Fatores que influenciam a TMB <span>incluem:</span></h4>
+                    <ul>
+                        <li><strong>Massa muscular:</strong> Aumenta a TMB, pois músculos consomem mais energia.</li>
+                        <li><strong>Idade:</strong> A TMB diminui com o avanço da idade.</li>
+                        <li><strong>Genética:</strong> Características hereditárias afetam a TMB.</li>
+                        <li><strong>Clima:</strong> Temperaturas extremas aumentam a TMB devido à regulação da
+                            temperatura corporal.</li>
+                        <li><strong>Dieta:</strong> Pequenas refeições frequentes aumentam a TMB, enquanto a fome a
+                            reduz.</li>
+                        <li><strong>Gravidez:</strong> Aumenta a TMB devido às necessidades energéticas adicionais.</li>
+                        <li><strong>Suplementos:</strong> Alguns, como a cafeína, podem aumentar a TMB.</li>
+                    </ul>
+                    <p><strong>Medição da TMB:</strong> Testes online são estimativas e podem não ser precisos.
+                        Consultar especialistas ou usar dispositivos de calorimetria é mais confiável.
+                    </p>
+                    <p><strong>Taxa Metabólica de Repouso (RMR):</strong> Semelhante à TMB, mas é a energia gasta em um
+                        estado relaxado, sem total inatividade.
+                    </p>
+                    <p>A TMB e o TDEE (gasto energético diário total) são úteis para estabelecer metas de saúde, mas são
+                        apenas estimativas. Manter registros de exercícios e alimentação pode ajudar a ajustar essas
+                        estimativas e monitorar o progresso.</p>
+                </article>
+            </article>
+
+            <!-- Percentual de Gordura Corporal -->
+            <article class="article-container">
+                <article class="article_bf ">
+                    <h3>Gordura Corporal (BF)</h3>
+
+                    <label for="idade_bf">Idade:</label>
+                    <input type="number" id="idade_bf" name="idade_bf" min="0" required>
+
+                    <label for="sexo_bf">Sexo:</label>
+                    <select name="sexo" id="sexo_bf">
+                        <option class="masculino_bf" value="masculino">Masculino</option>
+                        <option class="feminino_bf" value="feminino">Feminino</option>
+                    </select>
+
+                    <label for="peso_bf">Peso (kg):</label>
+                    <input type="number" id="peso_bf" name="peso_bf" min="0" required>
+
+                    <label for="altura_bf">Altura (cm):</label>
+                    <input type="number" id="altura_bf" name="altura_bf" min="0" required>
+
+                    <label for="pescoço_bf">Circunferência do Pescoço (cm):</label>
+                    <input type="number" id="pescoço_bf" name="pescoço_bf" min="0" required>
+
+                    <label for="cintura_bf">Circunferência da Cintura (cm):</label>
+                    <input type="number" id="cintura_bf" name="cintura_bf" min="0" required>
+
+                    <label for="quadril_bf" id="quadril_bf_label" style="display: none;">Circunferência do Quadril
+                        (cm):</label>
+                    <input type="number" id="quadril_bf" name="quadril_bf" style="display: none;" min="0" required>
+
+                    <button onclick="calcularBF()">Calcular</button>
+                    <button onclick="limparCamposBF()" value="limpar" class="clear">Limpar</button>
+                    <!-- Alteração no btn 'limparCampo'                              <<<< Aqui. -->
+
+                    <h4 class="result">Resultado:</h4>
+                    <p id="resultado_bf"></p>
+                    <p>Referência:<span> Jackson & Pollock </span></p>
+
+                    <!-- <button>Salvar Dados</button>
+                    <button class="cancel">Cancelar</button> -->
+                </article>
+                <article class="texto txt_bf">
+                    <h3>Gordura Corporal, Sobrepeso e Obesidade</h3>
+                    <p><strong>Gordura Corporal:</strong> Cientificamente conhecida como tecido adiposo, ela armazena
+                        energia, secreta hormônios e fornece proteção e isolamento ao corpo. Existem dois tipos
+                        principais de gordura: essencial e armazenada. A gordura essencial é necessária para funções
+                        vitais e reprodutivas, sendo 2-5% do peso em homens e 10-13% em mulheres. A gordura armazenada
+                        pode ser, subcutânea ou visceral, e em excesso pode levar a problemas de saúde graves.</p>
+                    <p><strong>Sobrepeso e Obesidade:</strong> São resultados de excesso de gordura corporal. Sobrepeso
+                        não necessariamente indica excesso de gordura, pois pode incluir massa muscular. A obesidade é
+                        associada a riscos como doenças cardiovasculares, diabetes tipo 2, e menor expectativa de vida.
+                        Ela afeta negativamente a saúde mental e a qualidade de vida.
+                    </p>
+                    <p><strong>Fatores Influenciadores:</strong> A genética, hábitos alimentares e nível de atividade
+                        física influenciam o acúmulo de gordura. Após os 40 anos, mudanças hormonais podem aumentar a
+                        gordura corporal, especialmente no abdômen em homens e nas coxas em mulheres.
+                    </p>
+                    <p><strong>Riscos à Saúde:</strong> Excesso de gordura, especialmente visceral, está ligado a altos
+                        níveis de colesterol ruim (LDL), resistência à insulina, e inflamações que podem aumentar o
+                        risco de doenças graves.
+                    </p>
+                    <p><strong>Medição de Gordura Corporal:</strong> Pode ser feita por métodos como o método da Marinha
+                        dos EUA ou o IMC. Esses métodos fornecem estimativas, sendo mais precisos com instrumentos
+                        especializados. As porcentagens ideais de gordura corporal variam com a idade e o gênero.</p>
+
+                    <h3 class="classificacao-bf">Classificação de Gordura Corporal:</h3>
+                    <table class="table-bf ">
+                        <thead class="uperCase-bf">
+                            <th>Descrição</th>
+                            <th>Mulher</th>
+                            <th>Homem</th>
+                        </thead>
+                        <tbody class="contentTable-bf alternate-background">
+                            <tr>
+                                <td>Gordura essencial:</td>
+                                <td>10-13%</td>
+                                <td>2-5%</td>
+                            </tr>
+                            <tr>
+                                <td>Atletas:</td>
+                                <td>14-20%</td>
+                                <td>6-13%</td>
+                            </tr>
+                            <tr>
+                                <td>Fitness:</td>
+                                <td>21%-24%</td>
+                                <td>14-17%</td>
+                            </tr>
+                            <tr>
+                                <td>Média</td>
+                                <td>25%-31%</td>
+                                <td>18-24%</td>
+                            </tr>
+                            <tr>
+                                <td>Obesidade</td>
+                                <td>&gt; 32%</td>
+                                <td>&gt; 25%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>Essas categorias ajudam a avaliar e gerenciar a saúde relacionada à gordura corporal.</p>
+                </article>
+            </article>
+            </article>
+
+            <!-- Fitness section -->
+
+            <article class="article-container">
+                <article class="article_rm">
+                    <div>
+                        <h3>Repetição Máxima (RM)</h3>
+                        <label for="peso_rm">Peso (kg):</label>
+                        <input type="number" id="peso_rm" name="peso_rm" min="1" max="1500" step="0.1" required>
+
+                        <label for="repeticao">Repetições:</label>
+                        <input type="number" id="repeticao_rm" name="repeticao_rm" min="0" max="500" value="1" required>
+
+                        <button onclick="calcularRM()">Calcular</button>
+                        <button onclick="limparCamposRM()" value="limpar" class="clear">Limpar</button>
+                        <!-- Alteração no btn 'limparCampo'                              <<<< Aqui. -->
+
+
+                        <label for="rm_result">Sua repetição Máxima é:</label>
+                        <input type="text" id="rm_result" name="rm_result" readonly>
+
+                        <div class="table_container">
+
+                            <table class="table_rm" id="table_rm" style="display: none;">      <!--<<<< Aqui. Table 'none' -->
+                                <thead class="thead_rm">
+                                    <tr>
+                                        <th>%1RM</th>
+                                        <th>Peso(kg)</th>
+                                        <th>Reps </th>
+                                    </tr>
+                                </thead>
+                                <tbody class="tabela_result" id="tabela_result">
+                                    <!-- Linhas geradas dinamicamente aqui através do objeto tbody.insertRow(){}-->
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- <button>Salvar Dados</button>
+                        <button class="cancel">Cancelar</button> -->
+                    </div>
+                </article>
+                <article class="texto txt_rm">
+                    <h3>Repetição Máxima (1RM)</h3>
+                    <p>É o peso máximo que uma pessoa consegue levantar apenas uma vez com boa técnica. É um
+                        indicador essencial da Força Máxima, que é a maior força que o sistema neuromuscular pode
+                        gerar. Conhecer o 1RM é crucial para planejar treinos de força, pois serve como referência
+                        para ajustar as cargas de exercícios.</p>
+
+                    <ol class="lista_calc_rm">
+                        <h4><strong>Cálculo do 1RM: </strong>Pode ser feito de duas maneiras:</h4>
+                        <li><strong>Teste Direto: </strong> Aumenta-se gradualmente a carga até não conseguir
+                            levantar o peso ou manter a técnica adequada.</li>
+                        <li><strong>Teste Indireto:</strong> Usa fórmulas para estimar o 1RM com base no número de
+                            repetições realizadas com determinado peso.</li>
+                    </ol>
+
+                    <p><strong>Exercícios Clássicos para 1RM:</strong> Agachamento, peso morto, press de banca e
+                        press militar são fundamentais para medir e desenvolver a força máxima, por serem exercícios
+                        que envolvem múltiplas articulações e grande parte da massa muscular.</p>
+
+                    <p><strong>Frequência de Avaliação:</strong> O 1RM deve ser avaliado periodicamente,
+                        especialmente antes e após ciclos de treino de força, ou antes de competições, para medir o
+                        progresso e ajustar os treinos conforme necessário.</p>
+
+                    <p>O RM é uma ferramenta vital para qualquer programa de treino de força, ajudando a orientar e
+                        maximizar o desenvolvimento da força física.</p>
+                </article>
+            </article>
+
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+        <p>By &copy; @lpaivaf 2024</p>
+    </footer>
+
+    <script src="/assets/JavaScript/index.js"></script>
+</body>
+
+</html>
