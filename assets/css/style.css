@@ -646,6 +646,10 @@ footer {
         margin-bottom: 1.5rem;
     }
 
+    .tabela_result td {
+        width: 26%;
+    }
+
     .footer {
         grid-row: 4;
         width: 100%;
