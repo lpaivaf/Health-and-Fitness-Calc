@@ -2,13 +2,22 @@
 
 function calcularIMC() {
     const peso = parseFloat(document.getElementById('peso_IMC').value);
-    const altura = parseFloat(document.getElementById('altura_IMC').value) / 100;
+    // const altura = parseInt(document.getElementById('altura_IMC').value) / 100;
+    // Pegando o valor da altura como string para validação sem o parseInt antes do document.getElementById.
+    const alturaStr = document.getElementById('altura_IMC').value;
 
-    //Fazer duas verificaçãoes
+    // Verifica se há pontos ou vírgulas na entrada
+    if (/[,\.]/.test(alturaStr)) {
+        alert('Altura deve conter apenas números inteiros ou decimais sem ponto e sem vírgula.');
+        return;
+    }
+    // Converte a altura para número após a verificação
+    const altura = parseInt(alturaStr) / 100;
+
     if (peso <= 0 || altura <= 0 || isNaN(peso) || isNaN(altura)) {
         alert('Campos em branco, letras, número zero e números negativos ou caracteres especiais não são permitidos.');
-        return; //Se esta condição for verdadeira, para aqui.
-    }  else if (altura > 2.55) { 
+        return; //Se esta condição for verdadeira, para aqui. 
+    } else if (altura > 2.55) {
         alert('Altura deve ser menor ou igual à 2,55m. Verifique se a altura está correta.');
         return;
     }
@@ -54,17 +63,31 @@ function limparCamposIMC() {
 //Cálculo de Taxa Metabólica Basal
 
 function calcularTMB() {
-    const idadeTmb = parseInt(document.getElementById('idade_tmb').value);
+    // const idadeTmb = parseInt(document.getElementById('idade_tmb').value);
+    const idadeStr = document.getElementById('idade_tmb').value;
     const sexoTmb = document.getElementById('sexo_tmb').value;
     const pesoTmb = parseFloat(document.getElementById('peso_tmb').value);
-    const alturaTmb = parseFloat(document.getElementById('altura_tmb').value);
+    // const alturaTmb = parseFloat(document.getElementById('altura_tmb').value);
+    const alturaStr = (document.getElementById('altura_tmb').value);
     const atividadeTmb = document.getElementById('atividade').value;
+
+    if (/[,\.]/.test(idadeStr)) {
+        alert('Idade deve conter apenas números inteiros ou decimais sem ponto e sem vírgula.');
+        return;
+    }
+    const idadeTmb = parseInt(idadeStr);
+
+    if (/[,\.]/.test(alturaStr)){
+        alert('Altura deve conter apenas números inteiros ou decimais sem ponto e sem vírgula.');
+        return;
+    }
+    const alturaTmb = parseFloat(alturaStr);
 
     //Fazer cinco verificaçãoes
     if (idadeTmb > 120) {
         alert('Idade deve ser menor ou igual à 120 anos. Verifique se a idade está correta.');
         return;
-    } else if (alturaTmb > 255) { 
+    } else if (alturaTmb > 255) {
         alert('Altura deve ser menor ou igual à 2,55m. Verifique se a altura está correta.');
         return;
     }
@@ -126,22 +149,37 @@ document.getElementById('sexo_bf').addEventListener('change', function () {
 });
 
 function calcularBF() {
-    const idade = parseInt(document.getElementById('idade_bf').value);
+    // const idade = parseInt(document.getElementById('idade_bf').value);
+    const idadeStr = document.getElementById('idade_bf').value;
     const sexo = document.getElementById('sexo_bf').value;
     const peso = parseFloat(document.getElementById('peso_bf').value);
-    const altura = parseFloat(document.getElementById('altura_bf').value);
+    // const altura = parseFloat(document.getElementById('altura_bf').value);
+    const alturaStr = document.getElementById('altura_bf').value;
     const pescoco = parseFloat(document.getElementById('pescoço_bf').value);
     const cintura = parseFloat(document.getElementById('cintura_bf').value);
     let quadril = 0;
 
+    if(/[,\.]/.test(idadeStr)){
+        alert('Idade deve conter apenas números inteiros ou decimais sem ponto e sem vírgula.');
+        return;
+    }
+    const idade = parseInt(idadeStr);
+
+    if(/[,\.]/.test(alturaStr)){
+        alert('Altura deve conter apenas números inteiros ou decimais sem ponto e sem vírgula.');
+        return;
+    }
+    const altura = parseInt(alturaStr);
+    
+
     //verificaçãoes
-    if (idade <= 0 || peso <= 0 || altura <= 0 || pescoco <= 0 || cintura <= 0 || isNaN(idade) || isNaN(peso) || isNaN(altura) || isNaN(pescoco) || isNaN(cintura)){
+    if (idade <= 0 || peso <= 0 || altura <= 0 || pescoco <= 0 || cintura <= 0 || isNaN(idade) || isNaN(peso) || isNaN(altura) || isNaN(pescoco) || isNaN(cintura)) {
         alert('Campos em branco, letras, número zero e números negativos ou caracteres especiais não são permitidos.');
         return;
     } else if (idade > 120) {
         alert('Idade deve ser menor ou igual á 120 anos. Verifique se a idade está correta.');
         return;
-    } else if (altura > 255) { 
+    } else if (altura > 255) {
         alert('Altura deve ser menor ou igual à 2,55m. Verifique se a altura está correta.');
         return;
     }
@@ -161,11 +199,11 @@ function calcularBF() {
 
     if (sexo === 'feminino') {
         quadril = parseFloat(document.getElementById('quadril_bf').value);
-        
-        if (quadril > 250 ) {
+
+        if (quadril > 250) {
             alert('Circunferência de quadril deve ser menor ou igual à 2,50m. Verifique se os dados estão corretos.');
             return;
-        } else if(isNaN(quadril) || quadril < 0){
+        } else if (isNaN(quadril) || quadril < 0) {
             alert('Campos em branco, letras, número zero e números negativos ou caracteres especiais não são permitidos.');
             return;
         }
@@ -206,22 +244,22 @@ function calcularRM() {
     if (isNaN(cargaLevantada) || isNaN(repeticoes)) { //isNaN veriifca se o valor é realmente um número
         alert('Campos em branco, letras, números negativos ou caracteres especiais não são permitidos.');
         return;
-    } else if(cargaLevantada <= 0){
+    } else if (cargaLevantada <= 0) {
         alert('O valor da carga deve ser maior que zero.');
         return;
-    } else if(cargaLevantada > 1500){
+    } else if (cargaLevantada > 1500) {
         alert('Carga Levantada deve ser menor ou igual à 1500kg.');
         return;
-    } else if(repeticoes <= 0){
+    } else if (repeticoes <= 0) {
         alert('O valor da repetição deve ser maior que zero e conter um número inteiro.');
         return;
-    } else if(repeticoes > 500){
+    } else if (repeticoes > 500) {
         alert('Repetições deve ser menor ou igual à 500.');
         return;
     }
 
     //limitar reps e carga
-    
+
     else {
 
         // Fórmula para calcular o RM (Fórmula de Brzycki)
@@ -282,7 +320,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             dados.style.display = (selectedId === 'home') ? 'none' : 'block';
             capa.style.display = (selectedId === 'home') ? 'block' : 'none';
-            imgCapa.style.display = (selectedId === 'home')? 'block' : 'none';
+            imgCapa.style.display = (selectedId === 'home') ? 'block' : 'none';
 
             sections.forEach(section => {
                 if (section.classList.contains(`article_${selectedId}`)) {
